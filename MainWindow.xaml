@@ -1,0 +1,21 @@
+﻿<Window x:Class="Login.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Login"
+        mc:Ignorable="d"
+        Title="Menu Principal" Height="350" Width="350">
+    <Grid>
+        <StackPanel>
+            <StackPanel>
+                <Menu>
+                    <MenuItem Header="Registros">
+                        <MenuItem x:Name="RegistroDeUsuaurios" Header="Registros de Usuarios" Click="RegistroDeUsuaurios_Click"/>
+                        <MenuItem x:Name="ConsultasUsuarios" Header="Consultas de Usuarios" Click="ConsultasUsuarios_Click"/>
+                    </MenuItem>
+                </Menu>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>

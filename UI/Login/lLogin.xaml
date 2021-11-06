@@ -1,0 +1,26 @@
+﻿<Window x:Class="Login.UI.Login.lLogin"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Login.UI.Login"
+        mc:Ignorable="d"
+        Title="Login" Height="300" Width="300" FontSize="14" Background="#04c582">
+    <Border Background ="#2e3137" CornerRadius="20" Margin="20">
+        <StackPanel Margin="10">
+            <Label Content="Login" Foreground="White" FontSize="25" HorizontalAlignment="Center"/>
+            <Separator></Separator>
+            <Label Content="Nombre de Usuario" Foreground="White" FontSize="12"/>
+            <TextBox x:Name="LNombreUsuarioTextBox" Background="#545d6a"/>
+            <Label Content="Contraseña" Foreground="White"/>
+            <PasswordBox x:Name="LClavePassWordBox" Background ="#545d6a" FontSize="12"/>
+            <Button x:Name="Login" Height="40" Width="80" Margin="60,10" Background="#545d6a" Foreground="White" Click="Login_Click">
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="Login" Foreground="White"/>
+                    <Image Source="/Resources/Loging.png" Height="20"/>
+                </StackPanel>
+                
+            </Button>
+        </StackPanel>
+    </Border>
+</Window>
