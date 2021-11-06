@@ -21,9 +21,12 @@ namespace Login.UI.Login
     /// </summary>
     public partial class lLogin : Window
     {
+        MainWindow main = new MainWindow();
+        
         public lLogin()
         {
             InitializeComponent();
+
         }
 
         private void Login_Click(object sender, RoutedEventArgs e)
@@ -45,7 +48,7 @@ namespace Login.UI.Login
             {
                 this.Close();
                 MessageBox.Show("Welcome" + LNombreUsuarioTextBox);
-                new MainWindow().Show();
+                main.Show();
             }
             else
             {
